@@ -28,3 +28,5 @@ js/todo.js
 
 ## 시연 영상
 
+https://github.com/user-attachments/assets/baa6e70b-6fbd-4211-b5f3-4783333b5891
+
