@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo 리스트</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen bg-gray-100 px-4 py-10">
+    <div class="mx-auto max-w-xl border border-gray-300 bg-white p-6 shadow-sm">
+      <h1 class="mb-6 text-center text-2xl font-bold">Todo 리스트</h1>
+
+      <form id="todo-form" class="flex gap-2">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="할 일을 입력하세요"
+          maxlength="50"
+          class="min-w-0 flex-1 border border-gray-400 px-3 py-2 outline-none focus:border-blue-500"
+        />
+        <button type="submit" class="bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">추가</button>
+      </form>
+
+      <p id="todo-count" class="mb-3 mt-6 text-sm text-gray-600">전체 할 일: 0개</p>
+      <ul id="todo-list" class="space-y-2"></ul>
+      <p id="empty-message" class="py-8 text-center text-gray-500">등록된 할 일이 없습니다.</p>
+    </div>
+
+    <script src="js/todo.js"></script>
+  </body>
+</html>
